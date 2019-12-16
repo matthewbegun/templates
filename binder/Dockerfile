@@ -6,6 +6,7 @@ RUN conda install --quiet --yes -c conda-forge \
     'pyreadstat' \
     'pandas-profiling' \
     'r-survminer' \
+    'jupyter_contrib_nbextensions' \
     'lifelines'
 
 RUN conda install --quiet --yes -c r \
@@ -14,4 +15,4 @@ RUN conda install --quiet --yes -c r \
 
 RUN pip install \
     'ggplot' \
-    'pyggplot' 
+    'pyggplot'
