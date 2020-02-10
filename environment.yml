@@ -1,60 +1,23 @@
-name: example-environment
+name: py37-this_is_a_dumb_name_you_should_change_it
 channels:
   - conda-forge
+  - defaults
+  - conda-forge/label/broken
 dependencies:
-  - numpy
-  - scipy
-  - pandas
-  - matplotlib
-  - ipywidgets
-  - jupyter_contrib_nbextensions
-  - psutil
-  - toolz
-  - dill
-  - partd
-  - bokeh
+  - python=3.7
+  - ipython
+  - jupytext
+  - notebook
+  - jupyterlab
+  - seaborn
+  - altair
+  - plotly
+  - rpy2
+  - cython
   - dask
   - lifelines
   - pandas-profiling
-
-name: example-environment
-channels:
-  - conda-forge
-dependencies:
-  - python
-  - numpy
-  - pip
+  - jupyter_contrib_nbextensions
   - pip:
-    - nbgitpuller
-    - sphinx-gallery
-    - pandas
-    - matplotlib
-
-
-dependencies:
-  - matplotlib
-  - seaborn
-  - numpy
-  - pandas
-  - fortran-magic 
-  - cython
-  - rpy2
-  - pip
-  - pip:
-      - julia
-      - cffi_magic
-numpy
-matplotlib
-
-
-numpy==1.16.*
-matplotlib==3.*
-seaborn==0.8.1
-pandas
-
-
-traitlets>=4.3.1
-ipython
-pandas
-vdom
-jupyterlab_launcher>=0.5.0
+    - bamboolib
+    - pyforest
